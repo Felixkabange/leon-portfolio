@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks — Message Sent</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    main{ min-height:60vh; display:grid; place-items:center; }
+    .thanks{ text-align:center; }
+    .thanks h1{ margin-bottom:6px; }
+    .thanks p{ color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark">LK</span>
+        <span class="brand-text">Leon Kabange</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="thanks">
+      <h1>Thank you!</h1>
+      <p>Your message has been sent. I'll get back to you soon.</p>
+      <p><a class="btn btn-primary" href="./">Return to site</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Leon Kabange</p>
+      <div></div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
